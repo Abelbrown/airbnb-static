@@ -1,13 +1,24 @@
 
-<div id="team">
+<div class= "container text-center padded">
 
-  <ul class="list-inline text-center">
-    <% ["seb", "romain"].each do |member| %>
-      <li>
-        <%= image_tag "#{member}.png", class: "img-circle avatar-xlarge" %>
-        <h3><%= member.capitalize %></h3>
-      </li>
-    <% end %>
-  </ul>
+  <h1>Our team</h1>
+
+  <div id="team">
+    <ul class="list-inline text-center">
+      <% ["seb", "romain"].each do |member| %>
+        <li>
+          <%= image_tag "#{member}.png", class: "img-circle avatar-xlarge" %>
+          <h3><%= member.capitalize %></h3>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="padded" >
+    <a href="mailto: contact@airbnb.com">
+      <i class= fa fa-envelope></i>
+      contact@airbnb.com
+    </a>
+  </div>
 
 </div>
